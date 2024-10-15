@@ -1,3 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    html {
+          scroll-behavior: smooth;
+    }
+  }
+
 body::-webkit-scrollbar {
     display: none;
+}
+
+.container {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: url(images/back.jpg);
+    background-size: cover;
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.header .menu {
+    width: fit-content;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 2rem;
+    padding: .5rem 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    backdrop-filter: blur(10px);
+}
+
+.header .profile {
+    width: fit-content;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 2rem;
+    padding: .5rem 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    backdrop-filter: blur(10px);
+}
+
+.project-box {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.project {
+    color: transparent;
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border-radius: 2rem;
+    text-align: center;
+    align-content: center;
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+    mask-image: radial-gradient(
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 1) 20%,
+    rgba(0, 0, 0, 1) 80%,
+    rgba(0, 0, 0, 0)
+  );
+}
+
+.x1 {
+    background: url(images/pr1.jpg);
+    background-size: cover;
+    opacity: 70%;
+    z-index: 4;
+    margin-right: 20rem;
+    margin-top: 10rem;
+
+    &:hover {
+        border: 2px solid rgba(255, 255, 255, 0.5);
+        z-index: 4;
+        opacity: 100%;
+    }
+}
+
+.x2 {
+    background: url(images/pr2.jpg);
+    background-size: cover;
+    opacity: 70%;
+    z-index: 3;
+    margin-right: 10rem;
+    margin-top: 5rem;
+
+    &:hover {
+        border: 2px solid rgba(255, 255, 255, 0.5);
+        z-index: 4;
+        opacity: 100%;
+    }
+}
+
+.x3 {
+    background: url(images/pr3.jpg);
+    background-size: cover;
+    opacity: 70%;
+    z-index: 2;
+
+    &:hover {
+        border: 2px solid rgba(255, 255, 255, 0.5);
+        z-index: 4;
+        opacity: 100%;
+    }
+}
+
+.x4 {
+    background: url(images/pr4.jpg);
+    background-size: cover;
+    opacity: 70%;
+    z-index: 1;
+    margin-left: 10rem;
+    margin-bottom: 5rem;
+    
+    &:hover {
+        border: 2px solid rgba(255, 255, 255, 0.5);
+        z-index: 5;
+        opacity: 100%;
+    }
+}
+
+.x5 {
+    background: url(images/pr5.jpg);
+    background-size: cover;
+    opacity: 70%;
+    z-index: 0;
+    margin-left: 20rem;
+    margin-bottom: 10rem;
+    
+    &:hover {
+        border: 2px solid rgba(255, 255, 255, 0.5);
+        z-index: 5;
+        opacity: 100%;
+    }
+}
+
+.footer {
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    padding: 1rem;
+    color: white;
+}
+
+.footer .credits {
+    width: fit-content;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 2rem;
+    padding: .5rem 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    backdrop-filter: blur(10px);
 }
