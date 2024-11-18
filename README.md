@@ -7,4 +7,4 @@ Layout view:
 
 
 End-user View:
-(to be added)
+![image](https://github.com/user-attachments/assets/2b7f979d-08e1-4ccb-b71c-99b1e7c0192c)
